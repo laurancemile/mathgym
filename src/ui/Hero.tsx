@@ -1,5 +1,5 @@
 import { MdOutlineVerified } from "react-icons/md";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 const Hero = () => {
 	return (
@@ -20,12 +20,22 @@ const Hero = () => {
 							</p>
 						</div>
 						<div className="flex flex-col sm:flex-row gap-4">
-							<button className="flex h-14 items-center justify-center rounded-xl bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/20 transition-transform active:scale-95">
+							<Link
+								to="contact"
+								smooth={true}
+								duration={500}
+								className="flex h-14 items-center justify-center rounded-xl bg-primary px-8 text-base font-bold text-white shadow-lg shadow-primary/20 transition-transform active:scale-95"
+							>
 								Book a Free Intro
-							</button>
-							<button className="flex h-14 items-center justify-center rounded-xl border-2 border-primary/20 bg-transparent px-8 text-base font-bold text-primary hover:bg-primary/5 transition-colors">
+							</Link>
+							<Link
+								to="pricing"
+								smooth={true}
+								duration={500}
+								className="flex h-14 items-center justify-center rounded-xl border-2 border-primary/20 bg-transparent px-8 text-base font-bold text-primary hover:bg-primary/5 transition-colors"
+							>
 								View Pricing
-							</button>
+							</Link>
 						</div>
 					</div>
 					<div className="relative">

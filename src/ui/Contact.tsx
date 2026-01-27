@@ -1,4 +1,4 @@
-import { MdOutlineMail, MdOutlineMyLocation } from "react-icons/md";
+import { MdOutlinePhone, MdOutlineWhatsapp } from "react-icons/md";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
@@ -53,22 +53,33 @@ const Contact = () => {
 							<div className="flex items-center gap-4">
 								<div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
 									<span className="material-symbols-outlined">
-										<MdOutlineMail />
+										<MdOutlineWhatsapp />
 									</span>
 								</div>
-								<span className="font-medium">Laurancemile@gmail.com</span>
+								<span className="font-medium">
+									<a
+										href="https://wa.me/+27817596653"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										Message me on WhatsApp
+									</a>
+								</span>
 							</div>
 							<div className="flex items-center gap-4">
 								<div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
 									<span className="material-symbols-outlined">
-										<MdOutlineMyLocation />
+										<MdOutlinePhone />
 									</span>
 								</div>
-								<span
-									className="font-medium"
-									data-location="Cape Town, South Africa"
-								>
-									263 Kgang Street (Online &amp; In-person)
+								<span className="font-medium">
+									<a
+										href="tel:+27817596653"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										+27 81 759 6653
+									</a>
 								</span>
 							</div>
 						</div>

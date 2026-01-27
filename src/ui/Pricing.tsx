@@ -1,4 +1,5 @@
 import { MdOutlineTaskAlt } from "react-icons/md";
+import { Link } from "react-scroll";
 
 interface Feature {
 	id: number;
@@ -56,9 +57,14 @@ const Pricing = () => {
 									</div>
 								);
 							})}
-							<button className="mt-4 w-full rounded-xl bg-primary py-4 font-bold text-white shadow-lg shadow-primary/20 transition-transform hover:scale-[1.02]">
+							<Link
+								to="contact"
+								smooth={true}
+								duration={500}
+								className="mt-4 w-full text-center rounded-xl bg-primary py-4 font-bold text-white shadow-lg shadow-primary/20 transition-transform hover:scale-[1.02]"
+							>
 								Enroll Now
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>
