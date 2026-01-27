@@ -73,7 +73,7 @@ const Contact = () => {
 								<textarea
 									className="rounded-xl border-slate-200 bg-slate-50 px-4 py-3 text-sm focus:border-primary focus:ring-primary dark:border-slate-700 dark:bg-slate-800"
 									placeholder="How can I help you?"
-									rows="4"
+									rows={4}
 								></textarea>
 							</div>
 							<button
