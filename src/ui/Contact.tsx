@@ -14,6 +14,7 @@ const Contact = () => {
 	const {
 		register,
 		handleSubmit,
+		reset,
 		formState: { errors, isSubmitting },
 	} = useForm<Inputs>();
 
@@ -28,6 +29,7 @@ const Contact = () => {
 				},
 			);
 			toast.success(`Message Sent`);
+			reset();
 		} catch (error) {
 			toast.success(`Error: ${error}`);
 		}
