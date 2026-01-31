@@ -5,7 +5,7 @@ import MaintenanceBanner from "./ui/MaintananceBanner";
 const App = () => {
 	return (
 		<>
-			<MaintenanceBanner.tsx />
+			<MaintenanceBanner />
 			<Home />
 			<Toaster
 				position="top-center"
