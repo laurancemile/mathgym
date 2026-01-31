@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 const App = () => {
 	return (
 		<>
+			<MaintenanceBanner.tsx />
 			<Home />
 			<Toaster
 				position="top-center"
