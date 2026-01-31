@@ -1,6 +1,6 @@
 import { Toaster } from "react-hot-toast";
 import Home from "./pages/Home";
-import MaintenanceBanner from "./ui/MaintananceBanner";
+import MaintenanceBanner from "./ui/MaintenanceBanner";
 
 const App = () => {
 	return (
