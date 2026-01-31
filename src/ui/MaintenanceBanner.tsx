@@ -1,28 +1,22 @@
-import { Toaster } from "react-hot-toast";
-import Home from "./pages/Home";
-import MaintenanceBanner from "./ui/MaintananceBanner";
-
-const App = () => {
+const MaintenanceBanner = () => {
 	return (
-		<>
-			<MaintenanceBanner />
-			<Home />
-			<Toaster
-				position="top-center"
-				reverseOrder={false}
-				gutter={8}
-				containerStyle={{
-					fontFamily: "sans-serif",
-					fontSize: "16px",
-				}}
-				toasterId="default"
-				toastOptions={{
-					success: { duration: 5000 },
-					error: { duration: 5000 },
-				}}
-			/>
-		</>
+		<div
+			role="status"
+			aria-live="polite"
+			style={{
+				width: "100%",
+				backgroundColor: "#FFF4E5",
+				color: "#663C00",
+				padding: "8px 16px",
+				fontSize: "14px",
+				textAlign: "center",
+				borderBottom: "1px solid #FFD8A8",
+			}}
+		>
+			🔧 <strong>Maintenance in Progress</strong> — Updates are currently being
+			applied.
+		</div>
 	);
 };
 
-export default App;
+export default MaintenanceBanner;
